@@ -6,23 +6,21 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 const IndexPage = () => (
-  <Layout>
+  <>
     <SEO title="Home" />
-    <h1>Learn to design and code</h1>
-    <p>Complete courses about the best tools and design systems. Prototype and build apps with React and Swift</p>
-    <StaticImage
-      src="../images/gatsby-astronaut.png"
-      width={300}
-      quality={95}
-      formats={["AUTO", "WEBP", "AVIF"]}
-      alt="A Gatsby astronaut"
-      style={{ marginBottom: `1.45rem` }}
-    />
-    <p>
-      <Link to="/page-2/">Go to page 2</Link> <br />
-      <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
-    </p>
-  </Layout>
+
+    <div className="Hero">
+      <div className="HeroGroup">
+        <h1>Learn to design and code</h1>
+        <p>Complete courses about the best tools and design systems. Prototype and build apps with React and Swift</p>
+        <p>
+          <Link to="/page-2/">Watch the video</Link> <br />
+        </p>
+      </div>
+    </div>
+
+    
+  </>
 )
 
 export default IndexPage
