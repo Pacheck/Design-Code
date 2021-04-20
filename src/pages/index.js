@@ -4,12 +4,19 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
+import Card from '../components/Card';
+
 import sketchLogo from '../assets/logo-sketch.png';
 import figmaLogo from '../assets/logo-figma.png';
 import studioLogo from '../assets/logo-studio.png';
 import framerLogo from '../assets/logo-framer.png';
 import reactLogo from '../assets/logo-react.png';
 import swiftLogo from '../assets/logo-swift.png';
+
+import Wallpaper from '../assets/wallpaper.jpg'
+import Wallpaper2 from '../assets/wallpaper2.jpg'
+import Wallpaper3 from '../assets/wallpaper3.jpg'
+import Wallpaper4 from '../assets/wallpaper4.jpg'
 
 const IndexPage = () => (
   <>
@@ -46,7 +53,32 @@ const IndexPage = () => (
             />
           </path>
         </svg>
-
+      </div>
+      <div className="Cards">
+        <h2>11 courses, more coming</h2>
+        <div className="CardGroup">
+          <Card 
+            title="Design System" 
+            text="10 sections"
+            image={Wallpaper}
+          />
+          <Card 
+            title="React for Designers" 
+            text="12 sections"
+            image={Wallpaper2}
+          />
+          <Card 
+            title="Sound Design" 
+            text="5 sections"
+            image={Wallpaper3}
+          />
+          <Card 
+            title="ARKit 2" 
+            text="10 sections"
+            image={Wallpaper4}
+          />
+        </div>
+        
       </div>
     </div>    
   </>
